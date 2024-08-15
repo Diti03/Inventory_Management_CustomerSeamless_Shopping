@@ -38,7 +38,9 @@ def index():
     rows = cur.fetchall()
     cur.close() 
     categories = [{"product_id": row[0], "product_name": row[1]} for row in rows]
+    '
     return jsonify(categories)
+    return 'hello
 
 
 @newpy.route('/api/categories', methods=['GET'])
